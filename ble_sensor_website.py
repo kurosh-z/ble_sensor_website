@@ -198,7 +198,7 @@ def main(desired_date, num_of_sensors, last_rows, addr_list, name_list):
             st.markdown("----")
             st.markdown("### Detailed Data")
             dt_col1, dt_col2, dt_col3 = st.columns([1, 4, 1])
-            
+
             with dt_col2:
                 if not ("ERROR" in df1):
                     st.markdown(f"""#### Table View of {name_list[0]}""")
@@ -237,13 +237,13 @@ with st.form(key="plot_form"):
     with cols[1]:
         senosr1_name = st.radio(
             "Set sensor1 name ",
-            ["CO2", "O2"],
+            ["CO2", "O2", "630-08", "1333-74", "7783-06"],
             key="senor1_name",
         )
     with cols[2]:
         senosr2_name = st.radio(
             "Set sensor2 name ",
-            ["CO2", "O2"],
+            ["CO2", "O2", "630-08", "1333-74", "7783-06"],
             key="senor2_name",
         )
 
